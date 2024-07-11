@@ -1,68 +1,56 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//   // Obtiene todos los enlaces de la barra de navegación
-//   const navLinks = document.querySelectorAll(".navbar ul li a");
+document.addEventListener("DOMContentLoaded", function () {
+  // Obtiene todos los enlaces de la barra de navegación
+  const navLinks = document.querySelectorAll(".navbar ul li a");
 
-//   // Itera sobre cada enlace y agrega un evento de clic suave para desplazarse
-//   navLinks.forEach(function (navLink) {
-//       navLink.addEventListener("click", function (event) {
-//           event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+  // Itera sobre cada enlace y agrega un evento de clic suave para desplazarse
+  navLinks.forEach(function (navLink) {
+    navLink.addEventListener("click", function (event) {
+      event.preventDefault(); // Evita el comportamiento predeterminado del enlace
 
-//           // Obtiene el valor del atributo href del enlace clicado
-//           const targetId = this.getAttribute("href").substring(1); // Elimina el "#" del inicio
+      // Obtiene el valor del atributo href del enlace clicado
+      const targetId = this.getAttribute("href").substring(1); // Elimina el "#" del inicio
 
-//           // Encuentra el elemento con el id correspondiente en el documento
-//           const targetElement = document.getElementById(targetId);
+      // Encuentra el elemento con el id correspondiente en el documento
+      const targetElement = document.getElementById(targetId);
 
-//           // Verifica si el elemento existe en el documento
-//           if (targetElement) {
-//               // Calcula la posición del elemento en relación con la parte superior de la página
-//               const targetPosition = targetElement.offsetTop - 80; // Ajusta el desplazamiento para compensar la altura del header
+      // Verifica si el elemento existe en el documento
+      if (targetElement) {
+        // Calcula la posición del elemento en relación con la parte superior de la página
+        const targetPosition = targetElement.offsetTop - 80; // Ajusta el desplazamiento para compensar la altura del header
 
-//               // Realiza un desplazamiento suave hasta la posición del elemento
-//               window.scrollTo({
-//                   top: targetPosition,
-//                   behavior: "smooth",
-//               });
-//           }
-//       });
-//   });
+        // Realiza un desplazamiento suave hasta la posición del elemento
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth",
+        });
+      }
+    });
+  });
 
-//   // Manejador para la galería de fotos
-//   const categories = document.querySelectorAll('.photo-category');
-//   const gallery = document.getElementById('gallery');
-//   const photos = {
-//       naturaleza: [
-//           'foto1.jpg',
-//           'foto2.jpg',
-//           'foto3.jpg'
-//       ],
-//       ciudad: [
-//           'foto4.jpg',
-//           'foto5.jpg',
-//           'foto6.jpg'
-//       ],
-//       retratos: [
-//           'foto7.jpg',
-//           'foto8.jpg',
-//           'foto9.jpg'
-//       ]
-//   };
+  // Manejador para la galería de fotos
+  const categories = document.querySelectorAll(".photo-category");
+  const gallery = document.getElementById("gallery");
+  const photos = {
+    naturaleza: ["foto1.jpg", "foto2.jpg", "foto3.jpg"],
+    ciudad: ["foto4.jpg", "foto5.jpg", "foto6.jpg"],
+    retratos: ["foto7.jpg", "foto8.jpg", "foto9.jpg"],
+  };
 
-//   categories.forEach(category => {
-//       category.addEventListener('click', function () {
-//           const selectedCategory = this.getAttribute('data-category');
-//           const images = photos[selectedCategory];
-//           gallery.innerHTML = '';
-//           images.forEach(img => {
-//               const imgElement = document.createElement('img');
-//               imgElement.src = `path/to/${img}`;
-//               gallery.appendChild(imgElement);
-//           });
-//           gallery.style.display = 'grid';
-//       });
-//   });
-// });
-jQuery(document).ready(function ($) {
+  categories.forEach((category) => {
+    category.addEventListener("click", function () {
+      const selectedCategory = this.getAttribute("data-category");
+      const images = photos[selectedCategory];
+      gallery.innerHTML = "";
+      images.forEach((img) => {
+        const imgElement = document.createElement("img");
+        imgElement.src = `path/to/${img}`;
+        gallery.appendChild(imgElement);
+      });
+      gallery.style.display = "grid";
+    });
+  });
+
+  // Manejador para la timeline
   var timelines = $(".cd-horizontal-timeline"),
     eventsMinDistance = 60;
 
@@ -315,14 +303,14 @@ jQuery(document).ready(function ($) {
       selectedContentHeight = selectedContent.height();
 
     if (selectedContent.index() > visibleContent.index()) {
-      var classEnetering = "selected enter-right",
+      var classEntering = "selected enter-right",
         classLeaving = "leave-left";
     } else {
-      var classEnetering = "selected enter-left",
+      var classEntering = "selected enter-left",
         classLeaving = "leave-right";
     }
 
-    selectedContent.attr("class", classEnetering);
+    selectedContent.attr("class", classEntering);
     visibleContent
       .attr("class", classLeaving)
       .one(
@@ -388,36 +376,6 @@ jQuery(document).ready(function ($) {
     return dateArrays;
   }
 
-  function parseDate2(events) {
-    var dateArrays = [];
-    events.each(function () {
-      var singleDate = $(this),
-        dateComp = singleDate.data("date").split("T");
-      if (dateComp.length > 1) {
-        //both DD/MM/YEAR and time are provided
-        var dayComp = dateComp[0].split("/"),
-          timeComp = dateComp[1].split(":");
-      } else if (dateComp[0].indexOf(":") >= 0) {
-        //only time is provide
-        var dayComp = ["2000", "0", "0"],
-          timeComp = dateComp[0].split(":");
-      } else {
-        //only DD/MM/YEAR
-        var dayComp = dateComp[0].split("/"),
-          timeComp = ["0", "0"];
-      }
-      var newDate = new Date(
-        dayComp[2],
-        dayComp[1] - 1,
-        dayComp[0],
-        timeComp[0],
-        timeComp[1]
-      );
-      dateArrays.push(newDate);
-    });
-    return dateArrays;
-  }
-
   function daydiff(first, second) {
     return Math.round(second - first);
   }
@@ -433,9 +391,9 @@ jQuery(document).ready(function ($) {
   }
 
   /*
-		How to tell if a DOM element is visible in the current viewport?
-		http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
-	*/
+    How to tell if a DOM element is visible in the current viewport?
+    http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+  */
   function elementInViewport(el) {
     var top = el.offsetTop;
     var left = el.offsetLeft;
