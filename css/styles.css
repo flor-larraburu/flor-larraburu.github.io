@@ -23,7 +23,7 @@ a {
 
 /* Header Styles */
 header {
-  position: fixed;
+  position:static;
   top: 0;
   width: 100%;
   background-color: #f8f8f8;
@@ -31,10 +31,15 @@ header {
   z-index: 1000;
 }
 
+.logo{
+  font-size: 50px;
+  text-align:left;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items:right;
   padding: 1em 2em;
 }
 
@@ -45,30 +50,44 @@ header {
 }
 
 .navbar ul li a {
-  font-size: 1.8rem;
+  font-size: 20px;
 }
 
 /* Bio Styles */
-.bio {
+.bio-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5em 2em;
-  margin-top: 100px; /* To avoid being hidden by the fixed header */
-  text-align: center;
+  align-items: center; /* Alinea verticalmente los contenidos */
+  margin: 20px; /* Espacio inferior para separar de otros elementos */
 }
 
-.bio img {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  margin-bottom: 1em;
+.bio-photo {
+  flex: 1; /* Ocupa el 50% del ancho disponible */
+  display: flex;
+  justify-content: flex-end; /* Alinea el contenido al final del contenedor */
+  margin: 20px;
 }
 
-.bio p {
-  font-size: 1.8rem;
-  max-width: 600px;
+.bio-text {
+  flex: 1; /* Ocupa el 50% del ancho disponible */
 }
+
+.rounded-photo {
+  width: 50%; /* La imagen ocupa todo el ancho del contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+  border-radius: 50%; /* Hace que la imagen sea circular */
+  object-fit: cover; /* Ajusta la imagen al tamaño del contenedor sin distorsión */
+}
+
+.section-title{
+  font-size: 30px;
+}
+.section-description{
+  text-align: justify;
+  width: 50%;
+  font-size: 18px;
+}
+
+
 
 /* Timeline Styles */
 .cd-horizontal-timeline {
