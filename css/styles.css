@@ -1,0 +1,121 @@
+/* Reset y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* Color de fondo */
+    color: #333; /* Color de texto principal */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos del encabezado */
+.header {
+    background-color: #333; /* Color de fondo del header */
+    color: #fff; /* Color de texto del header */
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar {
+    text-align: right;
+}
+
+.navbar ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #FFD733; /* Color amarillo cuando se hace hover */
+}
+
+/* Estilos de las secciones */
+.content {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 3rem; /* Tamaño grande para los títulos de sección */
+    margin-bottom: 20px;
+    color: #333; /* Color de texto principal */
+}
+
+.section-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555; /* Color de texto secundario */
+}
+
+.home-section {
+    background-color: #FFD733; /* Fondo amarillo para la sección de inicio */
+}
+
+.software-section {
+    background-color: #33FFCA; /* Fondo verde para la sección de desarrollo de software */
+}
+
+.photo-section {
+    background-color: #33FFCA; /* Fondo verde para la sección de fotografía y video */
+}
+
+.writing-section {
+    background-color: #FFD733; /* Fondo amarillo para la sección de escritura */
+}
+
+.contact-section {
+    background-color: #333; /* Fondo negro para la sección de contacto */
+    color: #fff; /* Color de texto blanco para la sección de contacto */
+}
+
+/* Estilos del pie de página */
+.footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color de texto del footer */
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Estilos de íconos */
+.fa-envelope,
+.fab {
+    margin-right: 5px;
+}
