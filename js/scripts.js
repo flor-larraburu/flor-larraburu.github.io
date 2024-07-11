@@ -413,6 +413,31 @@ document.addEventListener("DOMContentLoaded", function () {
       left + width > window.pageXOffset
     );
   }
+  // Obtener el modal
+  var modal = document.getElementById("pdfModal");
+
+  // Obtener el botón para abrir el modal
+  var btnOpenModal = document.getElementById("openModal");
+
+  // Obtener el elemento span para cerrar el modal
+  var spanClose = document.getElementsByClassName("close")[0];
+
+  // Cuando el usuario haga clic en el enlace, abrir el modal
+  btnOpenModal.onclick = function () {
+    modal.style.display = "block";
+  };
+
+  // Cuando el usuario haga clic en la 'x', cerrar el modal
+  spanClose.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  // Cuando el usuario haga clic fuera del modal, cerrarlo
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
 
   function checkMQ() {
     //check if mobile or desktop device
