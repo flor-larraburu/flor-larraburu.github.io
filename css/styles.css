@@ -14,24 +14,28 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   color: #383838;
   background-color: #f8f8f8;
+  text-align: center; /* Centrado del texto en todo el cuerpo */
 }
 
- h2 {
+h2 {
   font-weight: bold;
   font-size: 7rem;
   font-family: "Playfair Display", serif;
   font-weight: 700;
   line-height: 1.2;
 }
- em {
+
+em {
   display: block;
   font-style: italic;
   margin: 10px auto;
 }
- em::before {
+
+em::before {
   content: '- ';
 }
- p {
+
+p {
   font-size: 1.4rem;
   color: #959595;
 }
@@ -44,7 +48,7 @@ a {
 
 /* Header Styles */
 header {
-  position:static;
+  position: static;
   top: 0;
   width: 100%;
   background-color: #f8f8f8;
@@ -52,67 +56,78 @@ header {
   z-index: 1000;
 }
 
-.logo{
-  margin-left: 10%;
-  font-size: 50px;
-  text-align:left;
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 10%;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 8rem;
+  text-align: left;
+  font-family: "Playfair Display", serif;
 }
 
 .navbar {
-  display:block;
-  justify-content:left;
-  padding: 1em 2em;
+  display: flex;
 }
 
 .navbar ul {
-  list-style-type:none;
+  list-style-type: none;
   display: flex;
-  justify-content: end;
   gap: 2em;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar ul li a {
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 /* Bio Styles */
 .bio-container {
   display: flex;
-  align-items: center; /* Alinea verticalmente los contenidos */
-  margin: 10px; /* Espacio inferior para separar de otros elementos */
+  align-items: center;
+  margin: 10px;
+  margin-top: 5%;
 }
 
 .bio-photo {
-  flex: 1; /* Ocupa el 50% del ancho disponible */
+  flex: 1;
   display: flex;
-  justify-content: flex-end; /* Alinea el contenido al final del contenedor */
+  justify-content: flex-end;
   margin-right: 20px;
-  
 }
 
 .bio-text {
-  flex: 1; /* Ocupa el 50% del ancho disponible */
+  flex: 1;
   margin-left: 20px;
+  text-align: left;
+}
 
+.ection-title{
+  text-align: left;
 }
 
 .rounded-photo {
-  width: 50%; /* La imagen ocupa todo el ancho del contenedor */
-  height: auto; /* Altura automática para mantener la proporción */
-  border-radius: 50%; /* Hace que la imagen sea circular */
-  object-fit: cover; /* Ajusta la imagen al tamaño del contenedor sin distorsión */
+  width: 50%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.section-title{
-  font-size: 30px;
+.section-title {
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
 }
-.section-description{
+
+.section-description {
   text-align: justify;
   width: 50%;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
-
-
 
 /* Timeline Styles */
 /* -------------------------------- 
@@ -496,5 +511,39 @@ Main Components
     -ms-transform: translateX(0%);
     -o-transform: translateX(0%);
     transform: translateX(0%);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bio-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bio-photo {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .bio-text {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .rounded-photo {
+    width: 70%;
+  }
+
+  .section-description {
+    width: 90%;
+    font-size: 1.6rem;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul li {
+    margin-bottom: 10px;
   }
 }
