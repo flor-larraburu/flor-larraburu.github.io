@@ -17,13 +17,13 @@
   <body>
     <header class="header">
       <div class="container">
-        <h1 class="logo">[Tu Nombre]</h1>
+        <h1 class="logo">Flor Larraburu</h1>
         <nav class="navbar">
           <ul>
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#software">Desarrollo de Software</a></li>
+            <li><a href="#home">Bio</a></li>
             <li><a href="#photography">Fotografía y Video</a></li>
-            <li><a href="#writing">Escritura</a></li>
+            <li><a href="#tech">Tech</a></li>
+            <li><a href="#writing">Pensamientos</a></li>
             <li><a href="#contact">Contacto</a></li>
           </ul>
         </nav>
@@ -31,8 +31,11 @@
     </header>
 
     <section id="home" class="home-section">
-      <div class="container">
-        <div class="content">
+      <div class="container bio-container">
+        <div class="bio-photo">
+          <img src="path/to/your-photo.jpg" alt="[Tu Nombre]" />
+        </div>
+        <div class="bio-text">
           <h2 class="section-title">Bienvenida a mi Portafolio</h2>
           <p class="section-description">
             Soy una profesional con formación en telecomunicaciones y
@@ -42,17 +45,186 @@
           </p>
         </div>
       </div>
-    </section>
+      <!-- Línea temporal -->
+      <div class="timeline">
+        <!-- Contenido de la línea temporal de CodePen -->
+        <div class="events-wrapper">
+          <div class="events">
+            <ol>
+              <li>
+                <a href="#0" data-date="16/01/2014" class="selected">16 Jan</a>
+              </li>
+              <li><a href="#0" data-date="28/02/2014">28 Feb</a></li>
+              <li><a href="#0" data-date="20/04/2014">20 Mar</a></li>
+              <li><a href="#0" data-date="20/05/2014">20 May</a></li>
+              <li><a href="#0" data-date="09/07/2014">09 Jul</a></li>
+              <li><a href="#0" data-date="30/08/2014">30 Aug</a></li>
+              <li><a href="#0" data-date="15/09/2014">15 Sep</a></li>
+              <li><a href="#0" data-date="01/11/2014">01 Nov</a></li>
+              <li><a href="#0" data-date="10/12/2014">10 Dec</a></li>
+              <li><a href="#0" data-date="19/01/2015">29 Jan</a></li>
+              <li><a href="#0" data-date="03/03/2015">3 Mar</a></li>
+            </ol>
 
-    <section id="software" class="software-section">
-      <div class="container">
-        <div class="content">
-          <h2 class="section-title">Desarrollo de Software</h2>
-          <p class="section-description">
-            Descubre algunos de los proyectos técnicos que he desarrollado en el
-            ámbito de las telecomunicaciones y administración de empresas.
-          </p>
+            <span class="filling-line" aria-hidden="true"></span>
+          </div>
+          <!-- .events -->
         </div>
+        <!-- .events-wrapper -->
+
+        <ul class="cd-timeline-navigation">
+          <li><a href="#0" class="prev inactive">Prev</a></li>
+          <li><a href="#0" class="next">Next</a></li>
+        </ul>
+        <!-- .cd-timeline-navigation -->
+      </div>
+      <!-- .timeline -->
+
+      <div class="events-content">
+        <ol>
+          <li class="selected" data-date="16/01/2014">
+            <h2>Horizontal Timeline</h2>
+            <em>January 16th, 2014</em>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+              praesentium officia, fugit recusandae ipsa, quia velit nulla
+              adipisci? Consequuntur aspernatur at, eaque hic repellendus sit
+              dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+              reiciendis eligendi! Doloremque quia pariatur harum ea amet
+              quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            </p>
+          </li>
+
+          <li data-date="28/02/2014">
+            <h2>Event title here</h2>
+            <em>February 28th, 2014</em>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+              praesentium officia, fugit recusandae ipsa, quia velit nulla
+              adipisci? Consequuntur aspernatur at, eaque hic repellendus sit
+              dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+              reiciendis eligendi! Doloremque quia pariatur harum ea amet
+              quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            </p>
+          </li>
+
+          <li data-date="20/04/2014">
+            <h2>Event title here</h2>
+            <em>March 20th, 2014</em>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+              praesentium officia, fugit recusandae ipsa, quia velit nulla
+              adipisci? Consequuntur aspernatur at, eaque hic repellendus sit
+              dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+              reiciendis eligendi! Doloremque quia pariatur harum ea amet
+              quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            </p>
+          </li>
+
+          <li data-date="20/05/2014">
+            <h2>Event title here</h2>
+            <em>May 20th, 2014</em>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+              praesentium officia, fugit recusandae ipsa, quia velit nulla
+              adipisci? Consequuntur aspernatur at, eaque hic repellendus sit
+              dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+              reiciendis eligendi! Doloremque quia pariatur harum ea amet
+              quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            </p>
+          </li>
+
+          <li data-date="09/07/2014">
+            <h2>Event title here</h2>
+            <em>July 9th, 2014</em>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+              praesentium officia, fugit recusandae ipsa, quia velit nulla
+              adipisci? Consequuntur aspernatur at, eaque hic repellendus sit
+              dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+              reiciendis eligendi! Doloremque quia pariatur harum ea amet
+              quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            </p>
+          </li>
+
+          <li data-date="30/08/2014">
+            <h2>Event title here</h2>
+            <em>August 30th, 2014</em>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+              praesentium officia, fugit recusandae ipsa, quia velit nulla
+              adipisci? Consequuntur aspernatur at, eaque hic repellendus sit
+              dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+              reiciendis eligendi! Doloremque quia pariatur harum ea amet
+              quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            </p>
+          </li>
+
+          <li data-date="15/09/2014">
+            <h2>Event title here</h2>
+            <em>September 15th, 2014</em>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+              praesentium officia, fugit recusandae ipsa, quia velit nulla
+              adipisci? Consequuntur aspernatur at, eaque hic repellendus sit
+              dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+              reiciendis eligendi! Doloremque quia pariatur harum ea amet
+              quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            </p>
+          </li>
+
+          <li data-date="01/11/2014">
+            <h2>Event title here</h2>
+            <em>November 1st, 2014</em>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+              praesentium officia, fugit recusandae ipsa, quia velit nulla
+              adipisci? Consequuntur aspernatur at, eaque hic repellendus sit
+              dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+              reiciendis eligendi! Doloremque quia pariatur harum ea amet
+              quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            </p>
+          </li>
+
+          <li data-date="10/12/2014">
+            <h2>Event title here</h2>
+            <em>December 10th, 2014</em>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+              praesentium officia, fugit recusandae ipsa, quia velit nulla
+              adipisci? Consequuntur aspernatur at, eaque hic repellendus sit
+              dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+              reiciendis eligendi! Doloremque quia pariatur harum ea amet
+              quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            </p>
+          </li>
+
+          <li data-date="19/01/2015">
+            <h2>Event title here</h2>
+            <em>January 19th, 2015</em>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+              praesentium officia, fugit recusandae ipsa, quia velit nulla
+              adipisci? Consequuntur aspernatur at, eaque hic repellendus sit
+              dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+              reiciendis eligendi! Doloremque quia pariatur harum ea amet
+              quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            </p>
+          </li>
+
+          <li data-date="03/03/2015">
+            <h2>Event title here</h2>
+            <em>March 3rd, 2015</em>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum
+              praesentium officia, fugit recusandae ipsa, quia velit nulla
+              adipisci? Consequuntur aspernatur at, eaque hic repellendus sit
+              dicta consequatur quae, ut harum ipsam molestias maxime non nisi
+              reiciendis eligendi! Doloremque quia pariatur harum ea amet
+              quibusdam quisquam, quae, temporibus dolores porro doloribus.
+            </p>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -64,6 +236,26 @@
             Explora mi pasión por la fotografía y los videos a través de
             imágenes capturadas y videos producidos con dedicación.
           </p>
+          <div class="photo-grid">
+            <div class="photo-category" data-category="naturaleza">
+              Naturaleza
+            </div>
+            <div class="photo-category" data-category="ciudad">Ciudad</div>
+            <div class="photo-category" data-category="retratos">Retratos</div>
+          </div>
+          <div class="photo-gallery" id="gallery"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech" class="tech-section">
+      <div class="container">
+        <div class="content">
+          <h2 class="section-title">Tech</h2>
+          <p class="section-description">
+            Descubre algunos de los proyectos técnicos que he desarrollado en el
+            ámbito de las telecomunicaciones y administración de empresas.
+          </p>
         </div>
       </div>
     </section>
@@ -71,7 +263,7 @@
     <section id="writing" class="writing-section">
       <div class="container">
         <div class="content">
-          <h2 class="section-title">Escritura</h2>
+          <h2 class="section-title">Pensamientos en papel</h2>
           <p class="section-description">
             Lee algunos de mis escritos, donde combino mi formación técnica con
             la creatividad y la expresión escrita.
@@ -98,7 +290,6 @@
                 >Tu Perfil</a
               >
             </li>
-            <!-- Agrega más información de contacto según sea necesario -->
           </ul>
         </div>
       </div>
