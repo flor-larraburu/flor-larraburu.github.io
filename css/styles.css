@@ -234,6 +234,7 @@ Main Components
   -o-transform: translateZ(0);
   transform: translateZ(0);
 }
+
 .cd-horizontal-timeline .events a::after {
   /* this is used to create the event spot */
   content: '';
