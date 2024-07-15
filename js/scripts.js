@@ -439,6 +439,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
+  document.addEventListener("DOMContentLoaded", function () {
+    // JavaScript adicional puede ir aquí si es necesario
+  });
+
   function checkMQ() {
     //check if mobile or desktop device
     return window

@@ -23,7 +23,7 @@
             <li><a href="#home">BIO</a></li>
             <li><a href="#photography">AUDIOVISUAL</a></li>
             <li><a href="#tech">TECH</a></li>
-            <li><a href="#writing">ESCRITOS</a></li>
+            <li><a href="#writing">PUBLICACIONES</a></li>
             <li><a href="#contact">CONTACTO</a></li>
           </ul>
         </nav>
@@ -40,7 +40,7 @@
           />
         </div>
         <div class="bio-text">
-          <h2 class="section-title">Bienvenido a mi Portafolio</h2>
+          <h2 class="section-title">Bienvenido a mi Portfolio</h2>
           <p class="section-description">
             Soy una profesional con formación en telecomunicaciones y
             administración de empresas (ADE). Aquí puedes explorar mis proyectos
@@ -234,32 +234,68 @@
       <!-- .events-content -->
     </section>
 
-    <section id="photography" class="photo-section">
-      <div class="container">
-        <div class="content">
-          <h2 class="section-title">Fotografía y Video</h2>
-          <p class="section-description">
-            Explora mi pasión por la fotografía y los videos a través de
-            imágenes capturadas y videos producidos con dedicación.
-          </p>
-          <div class="photo-grid">
-            <div class="photo-category" data-category="Deporte">Deporte</div>
-            <div class="photo-category" data-category="Escalada">Escalada</div>
-            <div class="photo-category" data-category="Naturaleza">
-              Naturaleza
+    <!DOCTYPE html>
+    <html lang="es">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <title>Portfolio</title>
+      </head>
+      <body>
+        <section id="photography" class="photo-section">
+          <div class="container">
+            <div class="content">
+              <h2 class="section-title">Audiovisual</h2>
+              <p class="section-description">
+                Explora mi pasión por la fotografía y los videos a través de
+                imágenes capturadas y videos producidos con dedicación.
+              </p>
+              <div class="photo-grid">
+                <div class="photo-category">Deportes</div>
+                <div class="photo-gallery" data-category="Deportes">
+                  <img src="./images/DEPORTES/DSC00560.JPG" alt="Deportes 1" />
+                  <img src="./images/DEPORTES/DSC00584.JPG" alt="Deportes 2" />
+                  <img src="./images/DEPORTES/DSC00634.JPG" alt="Deportes 3" />
+                </div>
+
+                <div class="photo-category">Escalada</div>
+                <div class="photo-gallery" data-category="Escalada">
+                  <img src="images//ESCALADA/DSC00714.JPG" alt="Escalada 1" />
+                  <img src="images//ESCALADA/DSC00753.JPG" alt="Escalada 2" />
+                  <img src="images//ESCALADA/DSC00847.JPG" alt="Escalada 3" />
+                  <img src="images//ESCALADA/DSC01020.JPG" alt="Escalada 4" />
+                  <img src="images//ESCALADA/DSC01060.JPG" alt="Escalada 5" />
+                  <img src="images//ESCALADA/DSC02273.JPG" alt="Escalada 6" />
+                </div>
+
+                <div class="photo-category">Culturas</div>
+                <div class="photo-gallery" data-category="Culturas">
+                  <img src="images/CULTURA/DSC01555.JPG" alt="Culturas 1" />
+                  <img src="images/CULTURA/DSC01618.JPG" alt="Culturas 2" />
+                  <img src="images/CULTURA/DSC01707.JPG" alt="Culturas 3" />
+                </div>
+
+                <div class="photo-category">Hosteleria</div>
+                <div class="photo-gallery" data-category="Hosteleria">
+                  <img
+                    src="images/HOSTELERIA/DSC01433.JPG"
+                    alt="Hosteleria 1"
+                  />
+                  <img
+                    src="images/HOSTELERIA/DSC01453.JPG"
+                    alt="Hosteleria 2"
+                  />
+                  <img src="images/HOSTELERIA/1.png" alt="Hosteleria 3" />
+                  <img src="images/HOSTELERIA/2.png" alt="Hosteleria 4" />
+                </div>
+              </div>
             </div>
-            <div class="photo-category" data-category="Desde los cielos">
-              Desde los cielos
-            </div>
-            <div class="photo-category" data-category="Hosteleria">
-              Hosteleria
-            </div>
-            <div class="photo-category" data-category="Vídeos">Vídeos</div>
           </div>
-          <div class="photo-gallery" id="gallery"></div>
-        </div>
-      </div>
-    </section>
+        </section>
+        <script src="js/scripts.js"></script>
+      </body>
+    </html>
 
     <section id="tech" class="tech-section">
       <div class="container">
@@ -276,7 +312,7 @@
     <section id="writing" class="writing-section">
       <div class="container">
         <div class="content">
-          <h2 class="section-title">Pensamientos en papel</h2>
+          <h2 class="section-title">Publicaciones</h2>
           <p class="section-description">
             Lee algunos de mis escritos, donde combino mi formación técnica con
             la creatividad y la expresión escrita.
@@ -284,8 +320,7 @@
 
           <div class="pdf-container">
             <h3>
-              ¡1er Premio en el V Concurso de Redacción Periodística para
-              Jóvenes!
+              1er Premio en el V Concurso de Redacción Periodística para Jóvenes
             </h3>
             <a
               href="https://www.nationalgeographic.com.es/concursos/lee-trabajados-ganadores-v-concurso-redaccion-periodistica-para-jovenes_22671"
