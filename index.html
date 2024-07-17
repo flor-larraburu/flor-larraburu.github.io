@@ -13,6 +13,14 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -234,68 +242,145 @@
       <!-- .events-content -->
     </section>
 
-    <!DOCTYPE html>
-    <html lang="es">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/styles.css" />
-        <title>Portfolio</title>
-      </head>
-      <body>
-        <section id="photography" class="photo-section">
-          <div class="container">
-            <div class="content">
-              <h2 class="section-title">Audiovisual</h2>
-              <p class="section-description">
-                Explora mi pasión por la fotografía y los videos a través de
-                imágenes capturadas y videos producidos con dedicación.
-              </p>
-              <div class="photo-grid">
+    <section id="photography" class="photo-section py-5">
+      <div class="container">
+        <div class="content text-center">
+          <h2 class="section-title">Audiovisual</h2>
+          <p class="section-description">
+            Explora mi pasión por la fotografía y los videos a través de
+            imágenes capturadas y videos producidos con dedicación.
+          </p>
+          <div id="photoCarousel" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li
+                data-target="#photoCarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#photoCarousel" data-slide-to="1"></li>
+              <li data-target="#photoCarousel" data-slide-to="2"></li>
+              <li data-target="#photoCarousel" data-slide-to="3"></li>
+            </ul>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
                 <div class="photo-category">Deportes</div>
-                <div class="photo-gallery" data-category="Deportes">
-                  <img src="./images/DEPORTES/DSC00560.JPG" alt="Deportes 1" />
-                  <img src="./images/DEPORTES/DSC00584.JPG" alt="Deportes 2" />
-                  <img src="./images/DEPORTES/DSC00634.JPG" alt="Deportes 3" />
+                <div class="photo-gallery">
+                  <img
+                    src="./images/DEPORTES/DSC00560.JPG"
+                    alt="Deportes 1"
+                    class="d-block w-100"
+                  />
+                  <img
+                    src="./images/DEPORTES/DSC00584.JPG"
+                    alt="Deportes 2"
+                    class="d-block w-100"
+                  />
+                  <img
+                    src="./images/DEPORTES/DSC00634.JPG"
+                    alt="Deportes 3"
+                    class="d-block w-100"
+                  />
                 </div>
-
+              </div>
+              <div class="carousel-item">
                 <div class="photo-category">Escalada</div>
-                <div class="photo-gallery" data-category="Escalada">
-                  <img src="images//ESCALADA/DSC00714.JPG" alt="Escalada 1" />
-                  <img src="images//ESCALADA/DSC00753.JPG" alt="Escalada 2" />
-                  <img src="images//ESCALADA/DSC00847.JPG" alt="Escalada 3" />
-                  <img src="images//ESCALADA/DSC01020.JPG" alt="Escalada 4" />
-                  <img src="images//ESCALADA/DSC01060.JPG" alt="Escalada 5" />
-                  <img src="images//ESCALADA/DSC02273.JPG" alt="Escalada 6" />
+                <div class="photo-gallery">
+                  <img
+                    src="images/ESCALADA/DSC00714.JPG"
+                    alt="Escalada 1"
+                    class="d-block w-100"
+                  />
+                  <img
+                    src="images/ESCALADA/DSC00753.JPG"
+                    alt="Escalada 2"
+                    class="d-block w-100"
+                  />
+                  <img
+                    src="images/ESCALADA/DSC00847.JPG"
+                    alt="Escalada 3"
+                    class="d-block w-100"
+                  />
+                  <img
+                    src="images/ESCALADA/DSC01020.JPG"
+                    alt="Escalada 4"
+                    class="d-block w-100"
+                  />
+                  <img
+                    src="images/ESCALADA/DSC01060.JPG"
+                    alt="Escalada 5"
+                    class="d-block w-100"
+                  />
+                  <img
+                    src="images/ESCALADA/DSC02273.JPG"
+                    alt="Escalada 6"
+                    class="d-block w-100"
+                  />
                 </div>
-
+              </div>
+              <div class="carousel-item">
                 <div class="photo-category">Culturas</div>
-                <div class="photo-gallery" data-category="Culturas">
-                  <img src="images/CULTURA/DSC01555.JPG" alt="Culturas 1" />
-                  <img src="images/CULTURA/DSC01618.JPG" alt="Culturas 2" />
-                  <img src="images/CULTURA/DSC01707.JPG" alt="Culturas 3" />
+                <div class="photo-gallery">
+                  <img
+                    src="images/CULTURA/DSC01555.JPG"
+                    alt="Culturas 1"
+                    class="d-block w-100"
+                  />
+                  <img
+                    src="images/CULTURA/DSC01618.JPG"
+                    alt="Culturas 2"
+                    class="d-block w-100"
+                  />
+                  <img
+                    src="images/CULTURA/DSC01707.JPG"
+                    alt="Culturas 3"
+                    class="d-block w-100"
+                  />
                 </div>
-
+              </div>
+              <div class="carousel-item">
                 <div class="photo-category">Hosteleria</div>
-                <div class="photo-gallery" data-category="Hosteleria">
+                <div class="photo-gallery">
                   <img
                     src="images/HOSTELERIA/DSC01433.JPG"
                     alt="Hosteleria 1"
+                    class="d-block w-100"
                   />
                   <img
                     src="images/HOSTELERIA/DSC01453.JPG"
                     alt="Hosteleria 2"
+                    class="d-block w-100"
                   />
-                  <img src="images/HOSTELERIA/1.png" alt="Hosteleria 3" />
-                  <img src="images/HOSTELERIA/2.png" alt="Hosteleria 4" />
+                  <img
+                    src="images/HOSTELERIA/1.png"
+                    alt="Hosteleria 3"
+                    class="d-block w-100"
+                  />
+                  <img
+                    src="images/HOSTELERIA/2.png"
+                    alt="Hosteleria 4"
+                    class="d-block w-100"
+                  />
                 </div>
               </div>
             </div>
+            <a
+              class="carousel-control-prev"
+              href="#photoCarousel"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#photoCarousel"
+              data-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </a>
           </div>
-        </section>
-        <script src="js/scripts.js"></script>
-      </body>
-    </html>
+        </div>
+      </div>
+    </section>
 
     <section id="tech" class="tech-section">
       <div class="container">
@@ -359,28 +444,35 @@
           <p class="section-description">
             Para cualquier consulta o colaboración, no dudes en contactarme.
           </p>
-          <ul class="contact-info">
-            <li>
-              <i class="fas fa-envelope"></i> Correo electrónico:
-              tuemail@example.com
-            </li>
-            <li>
-              <i class="fab fa-linkedin"></i> LinkedIn:
-              <a href="https://www.linkedin.com/in/tuusuario" target="_blank"
-                >Tu Perfil</a
+          <div class="contact-info">
+            <p>
+              <i class="fas fa-envelope"></i>
+              <strong>Correo electrónico:</strong>
+              florencial.larraburu@gmail.com
+            </p>
+            <p>
+              <i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong>
+              <a
+                href="https://www.linkedin.com/in/florencia-larraburu/"
+                target="_blank"
               >
-            </li>
-          </ul>
+                Flor Larraburu
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2024 [Tu Nombre]. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Flor Larraburu. Todos los derechos reservados.</p>
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script src="js/scripts.js"></script>
   </body>

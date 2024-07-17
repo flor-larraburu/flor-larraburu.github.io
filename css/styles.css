@@ -257,6 +257,13 @@ header {
   border-radius: 8px;
 }
 
+.photo-category{
+  font-family: "Playfair Display", serif;
+  color: #7b9d6f;
+
+}
+
+
 /* Timeline Styles */
 /* -------------------------------- 
 
