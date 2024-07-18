@@ -49,7 +49,7 @@
         </div>
         <div class="bio-text">
           <h2 class="section-title">Bienvenido a mi Portfolio</h2>
-          <p class="section-description">
+          <p class="section-bio-text">
             Soy una profesional con formación en telecomunicaciones y
             administración de empresas (ADE). Aquí puedes explorar mis proyectos
             de desarrollo de software, fotografía y videos, así como algunos de
@@ -345,6 +345,33 @@
             Descubre algunos de los proyectos técnicos que he desarrollado en el
             ámbito de las telecomunicaciones y administración de empresas.
           </p>
+          <div class="tech-div">
+            <img src="./images/tech/yolo.png" alt="YOLO v8" />
+            <div class="tech-photo">
+              <h3>Proyecto de Detección de Vehículos con YOLOv8 en la UPV</h3>
+              <p>
+                Este proyecto tiene como objetivo principal realizar un análisis
+                de video en tiempo real para detectar la entrada y salida de
+                vehículos en los accesos de la Universidad Politécnica de
+                Valencia (UPV) utilizando el modelo YOLOv8. La implementación
+                genera un archivo JSON con información detallada sobre el tipo
+                de vehículo, la dirección (entrada/salida) y el registro horario
+                de cada evento. <br />
+                Además, el proyecto incluye la implementación en una Raspberry
+                Pi 4 Model B, utilizando su cámara integrada. Esto requiere
+                adaptar el algoritmo de detección para operar eficientemente en
+                hardware de recursos limitados, manteniendo la precisión y
+                fiabilidad en la detección. El trabajo no solo configura el
+                modelo YOLOv8 para el conteo de vehículos, sino que también
+                integra la infraestructura de la Raspberry Pi, gestionando
+                recursos, acceso a la cámara y salida de datos en JSON. <br />
+                Esta solución contribuye al desarrollo de sistemas de vigilancia
+                y control de acceso inteligentes, mejorando la automatización y
+                recopilación de datos para una gestión eficiente y segura en
+                entornos universitarios como la UPV.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -397,12 +424,12 @@
             Para cualquier consulta o colaboración, no dudes en contactarme.
           </p>
           <div class="contact-info">
-            <p>
+            <p class="section-description">
               <i class="fas fa-envelope"></i>
               <strong>Correo electrónico:</strong>
               florencial.larraburu@gmail.com
             </p>
-            <p>
+            <p class="section-description">
               <i class="fab fa-linkedin"></i> <strong>LinkedIn:</strong>
               <a
                 href="https://www.linkedin.com/in/florencia-larraburu/"
@@ -418,7 +445,9 @@
 
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2024 Flor Larraburu. Todos los derechos reservados.</p>
+        <p class="section-description">
+          &copy; 2024 Flor Larraburu. Todos los derechos reservados.
+        </p>
       </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
