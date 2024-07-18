@@ -52,6 +52,7 @@ p, .section-description, .cd-horizontal-timeline .events-content p {
 a {
   color: #7b9d6f;
   font-weight: 700;
+  font-size: 1.3rem;
   text-decoration: none;
 }
 /* Ensures each section has a minimum height of 600px */
