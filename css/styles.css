@@ -530,7 +530,7 @@ ol{
   -webkit-transition: height 0.4s;
   -moz-transition: height 0.4s;
   transition: height 0.4s;
-  min-height: 500px;
+  min-height: 450px;
 }
 .cd-horizontal-timeline .events-content li {
   position: absolute;
